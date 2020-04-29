@@ -11,6 +11,8 @@ load_dotenv()
 token = os.getenv("BOT_TOKEN")
 bot = commands.Bot(command_prefix="!")
 
+
+'''Car related functions'''
 @bot.command(name = "mtcourse", description = "Generate a random Maximum Tune 5 course")
 async def mtcourse(ctx):
     course = ar.wangan_course()
@@ -25,6 +27,7 @@ async def id8course(ctx):
 async def bestcar(ctx):
     await ctx.send(ar.best_car())
 
+'''Anime related functions'''
 @bot.command(name = "plushie", description = "Extra huggable")
 async def plushie(ctx):
     picLink = anis.musashi_plush()
@@ -33,6 +36,11 @@ async def plushie(ctx):
 @bot.command(pass_context = True, name = "tamamosearch", description = "Get a random picture of Tamamo no Mae")
 async def tamamosearch(ctx):
     picLink = anis.tamamo_search()
+    await ctx.send(file = discord.File(picLink))
+
+@bot.command(pass_context = True, name = "foxgirlsearch", description = "Get a random picture of a foxgirl")
+async def foxgirlsearch(ctx):
+    picLink = anis.foxgirl_search()
     await ctx.send(file = discord.File(picLink))
 
 @bot.event

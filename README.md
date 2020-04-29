@@ -6,14 +6,16 @@ Basic Discord bot that responds to commands and says silly things. Current funct
 
 -Really likes Evo Xs (more like the creator does)
 
--Pull a random picture of Tamamo no Mae from local directory
+-Pull a random picture of Tamamo no Mae or a foxgirl/wolfgirl from local directory
 
 Future goals:
-
--Search other pictures
 
 -Actively download images off PIXIV (somehow...)
 
 -Look up prices of games (probably from pricecharting.com)
+
+-Make a less messy method of getting list of directories (JSON file?)
+
+-Reaction images
 
 -Who knows
