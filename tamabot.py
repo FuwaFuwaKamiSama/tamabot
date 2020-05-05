@@ -38,9 +38,9 @@ async def tamamosearch(ctx):
     picLink = anis.tamamo_search()
     await ctx.send(file = discord.File(picLink))
 
-@bot.command(pass_context = True, name = "foxgirlsearch", description = "Get a random picture of a foxgirl")
-async def foxgirlsearch(ctx):
-    picLink = anis.foxgirl_search()
+@bot.command(pass_context = True, name = "kemonosearch", description = "Get a random picture of an anime girl with anime ears")
+async def kemonosearch(ctx):
+    picLink = anis.kemono_search()
     await ctx.send(file = discord.File(picLink))
 
 @bot.event
